@@ -103,28 +103,18 @@
 	</div>
 	<a name="test"></a>
 	<div class=" col-12" style="height:750px; padding-top: 75px; background-color: #483a31;">
-		<div class=" mx-auto col-8 text-center test0 " style="height:600px;background-color: #c0a29c;">
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-			<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+		<div class=" mx-auto col-8 text-center test0 " style="height:600px;background-color: #c0a29c; padding-top: 50px;">
+			<h2>Тест: стоит ли вам заводить домашнее животное?</h2>
+			<h4 style="margin-top: 30px;">Учёные утверждают, что наличие домашнего животного снижает стресс, уменьшает риск развития сердечно-сосудистых заболеваний и даже повышает иммунитет. Несмотря на эти очевидные плюсы, появление в доме животного – это серьезный шаг. Пройдите тест и узнайте, готовы ли вы завести животное?</h4>
 			<button class="btntest col-10 mx-auto" style="height: 100px; margin-top: 50px;">Пройти тест</button>
 		</div>
-		<div class=" mx-auto col-8 text-center test1 " style="height:600px;background-color: #c0a29c;">
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-			<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</h4>
+		<div class=" mx-auto col-8 text-center test1 " style="height:600px;background-color: #c0a29c; padding-top: 50px;">
+			<h2>Имеете ли вы представление о том, каково это - иметь животное в доме?</h2>
 			<div class="col-12 mt-5">
-				<button class="tq1b1">200</button>
-				<button class="tq1b2">100</button>
-				<button class="tq1b3">50</button>
-				<button class="tq1b4">10</button>
-				<button class="tq1b5">0</button>
+				<button class="tq1b1">У меня с детства были животные, я прекрасно знаю, каково это. (+) </button>
+				<button class="tq1b2">Не знаю, как это, но очень хочу попробовать!</button>
+				<button class="tq1b3">У всех моих друзей есть животные, так что я часто общаюсь с ними и слушаю о них. (+) </button>
+				<button class="tq1b4">Все мои знания о животных в доме я почерпнул из сериала "Комиссар Рекс" и фильма "Гарфилд".</button>
 			</div>
 		</div>
 		<div class=" mx-auto col-8 text-center test2 " style="height:600px;background-color: #c0a29c;">
@@ -208,7 +198,6 @@
 	let tq1b2 = document.querySelector('.tq1b2')
 	let tq1b3 = document.querySelector('.tq1b3')
 	let tq1b4 = document.querySelector('.tq1b4')
-	let tq1b5 = document.querySelector('.tq1b5')
 	let test2 = document.querySelector('.test2')
 
 	tq1b1.onclick = function(){
@@ -229,11 +218,6 @@
 	tq1b4.onclick = function(){
 		test1.style.display = 'none';
 		test2.style.display = 'block';
-	}
-	tq1b5.onclick = function(){
-		test1.style.display = 'none';
-		test2.style.display = 'block';
-		tscore = tscore - 1
 	}
 	let tq2b1 = document.querySelector('.tq2b1')
 	let tq2b2 = document.querySelector('.tq2b2')
